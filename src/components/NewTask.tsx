@@ -10,7 +10,7 @@ export function NewTask() {
             />
             <button type="submit">               
                 Criar
-                <PlusCircle size={20} />
+                <PlusCircle size={20} weight='bold'/>
             </button> 
         </article>
     );

@@ -1,0 +1,21 @@
+.counter {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 39.875rem;
+    margin: 4rem auto;
+}
+
+.counter span {
+    font-size:.875rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.counter strong {
+    font-size:.875rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border-radius: 10rem;
+}
