@@ -2,14 +2,29 @@
     background: var(--gray-500);
     font-size: 0.875rem;
     font-weight:500;
-    border:0;
+    line-height: 1.4;
     border-radius: 8px;
     height: 4.5rem;
     padding: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
+}
+
+.task button {
+    background: transparent;
+    color: var(--gray-100);
+    border: 0;
+    padding: 0.4rem 0.15rem 0.125rem 0.15rem;
+    border-radius: 4px;
+    transition: .1s ease-in-out background-color;
+}
+
+.task button:hover {
+    background: var(--gray-400);
+    color: var(--danger);
 }
 
 .taskContent {
@@ -20,18 +35,28 @@
     border:0;
 }
 
-.taskContent input[type=checkbox] {
-    appearance: none;
-    background: transparent;
-    border: 2px solid var(--blue);
-    border-radius: 50%;
-    width: 1.125rem;
-    height: 1.125rem;
-    cursor: pointer;
+.taskContent input {
+    display: none;
 }
 
-.taskContent input[type=checkbox]:checked {
-    background: var(--purple-dark);
-    color: var(--gray-100);
-    border: none;
+.taskContent label::after {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    width: 1.091rem;
+    height: 1.091rem;
+    border-radius: .7rem;
+    border: 2px solid #4EA8DE;
+    transition: .1s ease-in-out background-color;
 }
+
+.taskContent input:checked + label::after {
+    background-color: var(--purple);
+    border-color: var(--purple);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .1s ease-in-out background-color;
+    background-image: url("data:image/svg+xml,%3Csvg width='10'   height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.43059 0.342154L4.09865 4.67409L1.61618 2.19162L0.780273 3.02753L4.09865 6.3459L9.26649 1.17806L8.43059 0.342154Z' fill='%23F2F2F2'/%3E%3C/svg%3E ");
+}
+

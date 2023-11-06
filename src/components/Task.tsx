@@ -5,10 +5,13 @@ export function Task() {
     return(
         <div className={styles.task}>
             <div className={styles.taskContent}>
-                <input type="checkbox" name="Task" />
-                <span>Lorem Ipsum Task Text</span>
+                <input type="checkbox" id="checkboxId"/>
+                <label htmlFor = 'checkboxId'/>
+                <span>Lorem Ipsum Task Text Lorem Ipsum Task Text Lorem Ipsum Task Text Lorem Ipsum Task Text</span>
             </div>
-            <Trash size={20} />
+            <button title="Deletar">
+                <Trash  size={24} />
+            </button>
         </div>
 
     );
