@@ -27,9 +27,11 @@
     border-radius: 50%;
     width: 1.125rem;
     height: 1.125rem;
+    cursor: pointer;
 }
 
 .taskContent input[type=checkbox]:checked {
     background: var(--purple-dark);
     color: var(--gray-100);
+    border: none;
 }
