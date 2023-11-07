@@ -1,15 +1,23 @@
 import styles from  './Task.module.css'
 import { Trash } from '@phosphor-icons/react';
 
-export function Task() {
+
+interface TaskProps {
+    id: string;
+    title: string;
+    isComplete: boolean;
+}
+
+export function Task ({ id, title }: TaskProps) {
+
     return(
         <div className={styles.task}>
             <div className={styles.taskContent}>
-                <input type="checkbox" id="checkboxId"/>
-                <label htmlFor = 'checkboxId'/>
-                <span>Lorem Ipsum Task Text Lorem Ipsum Task Text Lorem Ipsum Task Text Lorem Ipsum Task Text</span>
+                <input type="checkbox" id={id}/>
+                <label htmlFor = {id}/>
+                <span>{title}</span>
             </div>
-            <button title="Deletar">
+            <button title="Delete Task">
                 <Trash  size={24} />
             </button>
         </div>
