@@ -1,53 +1,23 @@
 import { Header } from './components/Header';
-import { NewTask } from './components/NewTask';
-import { Counter } from './components/Counter';
-import { Task } from './components/Task';
-
-import { v4 as uuidv4 } from 'uuid';
+import { NewTask, TaskType } from './components/NewTask';
+import { TaskList } from './components/TaskList';
 
 import styles from './App.module.css';
 
 import './global.css';
-
-const tasks = [
-  {
-    id: uuidv4(),
-    title: 'Estudar Javascript',
-    isComplete: true
-  },
-  {
-    id: uuidv4(),
-    title: 'Estudar Typescript',
-    isComplete: false
-  },
-  {
-    id: uuidv4(),
-    title: 'Estudar TailwindCSS',
-    isComplete: false
-  },
-]
-
+import { useState } from 'react';
 
 export function App() {
+  const [tasks, setTasks] = useState<TaskType[]>([]);
+
   return (
-    <div>
+    <>
       <Header />
       <div className={styles.wrapper}>
-        <NewTask />
-        <main>
-          <Counter />
-          {tasks.map(task => {
-            return (
-              <Task
-              id={task.id}
-              title={task.title}
-              isComplete={task.isComplete}
-            />
-            )
-          })}
-        </main>
+        <NewTask tasks={tasks} setTasks={setTasks}/>
+        <TaskList tasks={tasks} setTasks={setTasks}/>
       </div>
-    </div>
+    </>
   )
 }
 

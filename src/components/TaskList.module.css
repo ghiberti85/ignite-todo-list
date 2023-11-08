@@ -1,3 +1,35 @@
+.taskContainer {
+    width: 46rem;
+    margin: 0 auto;
+
+}
+
+.counter {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 4rem auto 2rem;
+    
+}
+
+.counter span {
+    font-size:.875rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.counter span:first-of-type {
+    color: var(--blue);
+}
+
+.counter strong {
+    font-size:.875rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 0.125rem 0.5rem;
+    border-radius: 10rem;
+    margin: 0 0.25rem;
+}
 .task {
     background: var(--gray-500);
     font-size: 0.875rem;

@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: -1.6rem;
+    margin: -1.6rem auto 0;
+    width: 46rem;
 }
 
 .newtask input {
@@ -10,7 +11,7 @@
     color: var(--gray-300);
     border-radius: 8px;
     border: 1px solid var(--gray-700);
-    width: 39.875rem;
+    width: 41rem;
     height: 3.375rem;
     line-height: 1.4;
     padding: 1rem;
@@ -19,7 +20,7 @@
 .newtask button {
     background: var(--blue-dark);
     color: var(--gray-100);
-    width: 5.625rem;
+    width: 5.5rem;
     height: 3.25rem;
     border-radius: 8px;
     font-size: 0.875rem;
