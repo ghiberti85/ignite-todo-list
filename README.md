@@ -20,7 +20,7 @@
 The App was created to solve the challenge of Rocketseat's Ignite course (updated trail). This application, despite being simple, is an excellent example to practice the development of CRUD (Create, Read, Update, Delete).
 
 <p align="center">
-  <img src=".github/app-preview.gif">
+  <img src="assets/app-preview.gif">
 </p>
 
 
@@ -40,14 +40,14 @@ The App was created to solve the challenge of Rocketseat's Ignite course (update
 ### Desktop
 
 <p align="left"> 
-  <img src="./.github/desktop-screenshot.png" width="70%">
+  <img src="assets/desktop-screenshot.png" width="70%">
 </p>
 
 ### Mobile
 
 <p align="left">       
-  <img src="./.github/mobile-screenshot-1.png" width="35%">
-  <img src="./.github/mobile-screenshot-2.png" width="35%">
+  <img src="assets/mobile-screenshot-1.png" width="35%">
+  <img src="assets/mobile-screenshot-2.png" width="35%">
 </p>
 
 ## 🔨 Tecnologias utilizadas
