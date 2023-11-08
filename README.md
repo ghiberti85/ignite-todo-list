@@ -20,7 +20,7 @@
 The App was created to solve the challenge of Rocketseat's Ignite course (updated trail). This application, despite being simple, is an excellent example to practice the development of CRUD (Create, Read, Update, Delete).
 
 <p align="center">
-  <img src="assets/app-preview.gif">
+  <img src="src/assets/app-preview.gif">
 </p>
 
 
@@ -59,7 +59,7 @@ The following tools were used to build the project:
 - **[CSS](https://www.w3.org/Style/CSS/)**
 - **[Vite](https://vitejs.dev/)**
 
-> Veja o arquivo [package.json](https://github.com/ghiberti85/ignite-todo-list/blob/main/package.json)
+> Check file [package.json](https://github.com/ghiberti85/ignite-todo-list/blob/main/package.json)
 
 
 ## 🚀 Install
