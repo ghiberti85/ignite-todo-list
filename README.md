@@ -1,16 +1,9 @@
 <p align="center">
-  <img width="20%" src="./src/assets/logo.svg" />
+  <img width="20%" src="./src/assets/todo-logo.svg" />
 </p>
 
 <p align="center">
     <strong>Todo list Web Application</strong>
-</p>
-
-<p align="center">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ghiberti85/ignite-todo-app">
-  <img alt="GitHub" src="https://img.shields.io/github/license/ghiberti85/ignite-todo-app">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ghiberti85/ignite-todo-app">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ghiberti85/ignite-todo-app?style=social">
 </p>
 
 <p align="center">
