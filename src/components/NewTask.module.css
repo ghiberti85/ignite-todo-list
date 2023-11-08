@@ -8,13 +8,17 @@
 
 .newtask input {
     background: var(--gray-500);
-    color: var(--gray-300);
+    color: var(--gray-100);
     border-radius: 8px;
     border: 1px solid var(--gray-700);
     width: 41rem;
     height: 3.375rem;
     line-height: 1.4;
     padding: 1rem;
+}
+
+.newTask input::placeholder {
+    color: var(--gray-300);
 }
 
 .newtask button {

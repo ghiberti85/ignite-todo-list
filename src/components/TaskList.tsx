@@ -1,6 +1,6 @@
 import { TaskType } from './NewTask';
 import styles from  './TaskList.module.css'
-import { Trash } from '@phosphor-icons/react';
+import { Trash, ClipboardText } from '@phosphor-icons/react';
 
 
 type TaskProps = {
@@ -56,7 +56,15 @@ export function TaskList ({ tasks, setTasks }: TaskProps) {
                                     onClick={() => handleTaskComplete(task.id)}
                                 />
                                 <label htmlFor = {task.id}/>
-                                <span>{task.title}</span>
+                                <span 
+                                    className= {
+                                        task.isComplete 
+                                        ? styles.taskComplete 
+                                        : styles.taskIncomplete
+                                    }
+                                >
+                                    {task.title}
+                                </span>
                             </div>
                             <button 
                                 title="Delete Task"
@@ -69,10 +77,9 @@ export function TaskList ({ tasks, setTasks }: TaskProps) {
                 </div>
             ) : (
                 <div className={styles.emptyTaskList}>
-                    <strong>
-                        Você ainda não tem tarefas cadastradas <br />
-                        Crie tarefas e organize seus itens a fazer 
-                    </strong>
+                    <ClipboardText size={48} />
+                    <strong>Você ainda não tem tarefas cadastradas</strong>
+                    <span>Crie tarefas e organize seus itens a fazer</span>
                 </div>
             )}
 
