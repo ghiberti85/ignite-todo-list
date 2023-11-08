@@ -40,14 +40,14 @@ The App was created to solve the challenge of Rocketseat's Ignite course (update
 ### Desktop
 
 <p align="left"> 
-  <img src="assets/desktop-screenshot.png" width="70%">
+  <img src="src/assets/desktop-screenshot.png" width="70%">
 </p>
 
 ### Mobile
 
 <p align="left">       
-  <img src="assets/mobile-screenshot-1.png" width="35%">
-  <img src="assets/mobile-screenshot-2.png" width="35%">
+  <img src="src/assets/mobile-screenshot-1.png" width="35%">
+  <img src="src/assets/mobile-screenshot-2.png" width="35%">
 </p>
 
 ## 🔨 Tecnologias utilizadas
@@ -81,10 +81,6 @@ npm run dev
 
 
 ## 📝 License
-
-<a href="https://opensource.org/licenses/MIT">
-    <img alt="GitHub" src="https://img.shields.io/github/license/ghiberti85/ignite-todo-app">
-</a>
 
 This project is under the MIT license. See the [LICENSE](./LICENSE.md) file for more details.
 
