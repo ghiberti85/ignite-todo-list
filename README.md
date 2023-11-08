@@ -24,7 +24,7 @@ The App was created to solve the challenge of Rocketseat's Ignite course (update
 </p>
 
 
-## ☑ Funcionalidades
+## ☑ Features
 
 - [x] Insert Tasks
   - [x] Inserting tasks with enter
@@ -50,16 +50,16 @@ The App was created to solve the challenge of Rocketseat's Ignite course (update
   <img src="src/assets/mobile-screenshot-2.png" width="35%">
 </p>
 
-## 🔨 Tecnologias utilizadas
+## 🔨 Technologies
 
 The following tools were used to build the project:
 
 - **[ReactJS](https://reactjs.org/)**
 - **[TypeScript](https://www.typescriptlang.org/)**
-- **[Sass](https://sass-lang.com/)**
+- **[CSS](https://www.w3.org/Style/CSS/)**
 - **[Vite](https://vitejs.dev/)**
 
-> Veja o arquivo [package.json](https://github.com/mateusabelli/ignite-todo-app/blob/main/package.json)
+> Veja o arquivo [package.json](https://github.com/ghiberti85/ignite-todo-list/blob/main/package.json)
 
 
 ## 🚀 Install
