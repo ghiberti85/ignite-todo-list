@@ -1,5 +1,5 @@
 .taskContainer {
-    width: 46rem;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -10,6 +10,7 @@
     justify-content: center;
     line-height: 1.4;
     color: var(--gray-300);
+    text-align: center;
 }
 
 .emptyTaskList svg {
@@ -42,13 +43,21 @@
     border-radius: 10rem;
     margin: 0 0.25rem;
 }
+
+.taskListContainer {
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+    padding-top: 4rem;
+}
+
 .task {
     background: var(--gray-500);
     font-size: 0.875rem;
     font-weight:500;
     line-height: 1.4;
     border-radius: 8px;
-    height: 4.5rem;
+    height: auto;
+    overflow: hidden;
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -118,3 +127,18 @@
     border-color: var(--purple);
 }
 
+@media only screen and (max-width: 320px) {
+    .counter span {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .counter strong {
+        margin: 0.25rem auto;
+    }
+
+    .taskListContainer {
+        padding-top: 2rem;
+    }
+}

@@ -1,17 +1,17 @@
-.newtask {
+.newTask {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin: -1.6rem auto 0;
-    width: 46rem;
+    width: 100%;
 }
 
-.newtask input {
+.newTask input {
     background: var(--gray-500);
     color: var(--gray-100);
     border-radius: 8px;
     border: 1px solid var(--gray-700);
-    width: 41rem;
+    width: 90%;
     height: 3.375rem;
     line-height: 1.4;
     padding: 1rem;
@@ -21,10 +21,10 @@
     color: var(--gray-300);
 }
 
-.newtask button {
+.newTask button {
     background: var(--blue-dark);
     color: var(--gray-100);
-    width: 5.5rem;
+    width: 10%;
     height: 3.25rem;
     border-radius: 8px;
     font-size: 0.875rem;
@@ -35,4 +35,22 @@
     justify-content: center;
     align-items: center;
     gap: 0.25rem
+}
+
+@media only screen and (max-width: 768px) {
+    .newTask input {
+        width: 75%;
+    }
+    .newTask button {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .newTask input {
+        width: 65%;
+    }
+    .newTask button {
+        width: 35%;
+    }
 }

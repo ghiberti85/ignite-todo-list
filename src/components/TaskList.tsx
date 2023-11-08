@@ -45,43 +45,45 @@ export function TaskList ({ tasks, setTasks }: TaskProps) {
                     )}
                 </span>
             </div>
-            {taskCount > 0 ? (
-                <div className={styles.taskList}>
-                    {tasks.map((task) => (
-                        <div className={styles.task}>
-                            <div className={styles.taskContent}>
-                                <input 
-                                    type="checkbox" 
-                                    id={task.id}
-                                    onClick={() => handleTaskComplete(task.id)}
-                                />
-                                <label htmlFor = {task.id}/>
-                                <span 
-                                    className= {
-                                        task.isComplete 
-                                        ? styles.taskComplete 
-                                        : styles.taskIncomplete
-                                    }
+            <div className={styles.taskListContainer}>
+                {taskCount > 0 ? (
+                    <div className={styles.taskList}>
+                        {tasks.map((task) => (
+                            <div className={styles.task}>
+                                <div className={styles.taskContent}>
+                                    <input 
+                                        type="checkbox" 
+                                        id={task.id}
+                                        onClick={() => handleTaskComplete(task.id)}
+                                    />
+                                    <label htmlFor = {task.id}/>
+                                    <span 
+                                        className= {
+                                            task.isComplete 
+                                            ? styles.taskComplete 
+                                            : styles.taskIncomplete
+                                        }
+                                    >
+                                        {task.title}
+                                    </span>
+                                </div>
+                                <button 
+                                    title="Delete Task"
+                                    onClick={() => handleTaskDelete(task.id)}
                                 >
-                                    {task.title}
-                                </span>
+                                    <Trash  size={24} />
+                                </button>
                             </div>
-                            <button 
-                                title="Delete Task"
-                                onClick={() => handleTaskDelete(task.id)}
-                            >
-                                <Trash  size={24} />
-                            </button>
-                        </div>
-                    ))}
-                </div>
-            ) : (
-                <div className={styles.emptyTaskList}>
-                    <ClipboardText size={48} />
-                    <strong>Você ainda não tem tarefas cadastradas</strong>
-                    <span>Crie tarefas e organize seus itens a fazer</span>
-                </div>
-            )}
+                        ))}
+                    </div>
+                ) : (
+                    <div className={styles.emptyTaskList}>
+                        <ClipboardText size={48} />
+                        <strong>Você ainda não tem tarefas cadastradas</strong>
+                        <span>Crie tarefas e organize seus itens a fazer</span>
+                    </div>
+                )}
+            </div>
 
         </div>
 

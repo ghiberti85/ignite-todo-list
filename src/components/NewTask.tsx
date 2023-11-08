@@ -40,7 +40,7 @@ export function NewTask({tasks, setTasks}: TaskProps) {
 
     return(
         <form 
-            className={styles.newtask}
+            className={styles.newTask}
             onSubmit={handleTaskSubmit}
         >
             <input 
