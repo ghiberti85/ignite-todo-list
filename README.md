@@ -12,7 +12,6 @@
  <a href="#-layout">Layout</a> • 
  <a href="#-technologies">Technologies</a> • 
  <a href="#-install">Install</a> • 
- <a href="#-license">License</a>
 </p>
 
 ## 💻 About
@@ -78,11 +77,6 @@ npm i
 npm run dev
 
 ```
-
-
-## 📝 License
-
-This project is under the MIT license. See the [LICENSE](./LICENSE.md) file for more details.
 
 ---
 
