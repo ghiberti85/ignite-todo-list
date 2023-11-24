@@ -65,7 +65,7 @@ The following tools were used to build the project:
 
 ```bash
 # Cloning repository
-git clone https://github.com/mateusabelli/ignite-todo-app.git
+git clone https://github.com/ghiberti85/ignite-todo-app.git
 
 # Access project's folder
 cd ignite-todo-app
